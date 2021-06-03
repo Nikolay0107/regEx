@@ -1,10 +1,7 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Arrays;
 
-public class RegEx1 {
+public class RegEx3 {
     public static void main(String[] args) {
-
-
         String s
                 = "Ivanov Vasiliy, Russia, Moscow, Lenin street, 51, Flat 48," +
                 "email: vivanov@mail.ru, Postcode: AA99, Phone Number: +123456889;"
@@ -14,18 +11,13 @@ public class RegEx1 {
                 "email: chuck@gmail.ru, Postcode: USA23, Phone Number: +65432194152;";
 
 
-  //      Pattern pattern = Pattern.compile("\\w+");
- //       Pattern pattern = Pattern.compile("\\b\\d{2}\\b");
-   //     Pattern pattern = Pattern.compile("\\+\\d{9}"); // display phone numbers which contains + symbol and nine numerals
+        String s2 = "chuck@gmail.ru";
+        boolean result = s2.matches("\\w+@\\w+\\.(com|ru)");
 
-        Pattern pattern = Pattern.compile("\\w+@\\w+\\W\\w+");
-
-        Matcher matcher = pattern.matcher(s);
-
-        while (matcher.find()){
-            System.out.println(matcher.group());
-        }
+        System.out.println(result);
 
 
+        String [] array = s.split( ",");
+        System.out.println(Arrays.toString(array));
     }
 }

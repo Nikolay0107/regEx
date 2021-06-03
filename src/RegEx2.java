@@ -27,12 +27,18 @@ public class RegEx2 {
 
 //        String s1 = "sSxKSBSBASFB S6DJK SA456KVDS5";
 //        Pattern pattern1 = Pattern.compile("\\D");   // only letters
+//
+//        String s1 = "ABBBABABABBBBABABABJBJBABABA";
+//        Pattern pattern1 = Pattern.compile("(AB){3,6}");
 
 
-        Matcher matcher = pattern1.matcher(s1);
+//        String s1 = "ABBBABABABBBBABABABJBJBABABA";
+//        Pattern pattern1 = Pattern.compile("A(B)*");
 
-        while (matcher.find()){
-            System.out.println("Position: " + matcher.start() + " " +matcher.group());
-        }
+   //     Matcher matcher = pattern1.matcher(s1);
+
+//        while (matcher.find()){
+//            System.out.println("Position: " + matcher.start() + " " +matcher.group());
+       // }
     }
 }
