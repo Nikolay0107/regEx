@@ -1,3 +1,5 @@
+package com.regex;
+
 import java.util.regex.Pattern;
 
 public class RegEx4 {

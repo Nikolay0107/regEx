@@ -1,3 +1,5 @@
+package com.regex;
+
 import java.util.Arrays;
 
 public class RegEx3 {
